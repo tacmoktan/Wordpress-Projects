@@ -38,12 +38,12 @@ file similar to what is shown in **.html** file.
 
 # Page Handling
 ## Single page handling
-For in-built post types (blogs, news, faqs)
+### For in-built post types (blogs, news, faqs)
 1. Create *single-post.php* file.
 2. Copy all the necessary designs in it.
 3. Add `the_permalink()` whereever necessary which when clicked, redirects to the single page.
 
-## For custom post types
+### For custom post types
 1. Create *single-<registered_post_type_slug>.php* 
 2. Same
 3. Same
