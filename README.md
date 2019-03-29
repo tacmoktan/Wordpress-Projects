@@ -26,19 +26,29 @@ Some wordpress projects I worked on.
 6. Create and maintain *front-page.php*
 7. Add `<?php get_header(); ?>`, `<?php get_footer();?>` to include header & footer in *front-page.php*
 8. Go to *function.php* & add necessary `wp_enqueue` for *style*(only .css files) and *script*(only .js files).
-9. Add `<?php wp_head();?>` immediately before `</head>` in *header.php* & `<?php wp_footer();?>` before `</body>` in *footer.php*. This will hook the stylesheets and scripts to the wordpress. & the webpage will be in its required style.
+9. Add `<?php wp_head();?>` immediately before `</head>` in *header.php* & `<?php wp_footer();?>` before 
+
+`</body>` in *footer.php*. This will hook the stylesheets and scripts to the wordpress. & the webpage will be in 
+
+its required style.
 10. Maintain dependencies (jquery is always on the top in `wp_enqueue_scripts()`).
-	Open the **.html** file in text editor, order the links of styles and scripts in function of **.php** file similar to what is shown in **.html** file.
+	Open the **.html** file in text editor, order the links of styles and scripts in function of **.php** 
+
+file similar to what is shown in **.html** file.
 
 ## Setting up codestar-framework
 
-1. Copy and paste the  codestar-framework folder (containing the framework) into the `wp-content/themes/my-theme/plugin(createnewfolder)/`
+1. Copy and paste the  codestar-framework folder (containing the framework) into the `wp-content/themes/my-
+
+theme/plugin(createnewfolder)/`
 2. Now add import that *cs-framework.php* file using
 ```php
 require get_template_directory().'/plugin/codestar-framework/codestar-framework1.0.2/cs-framework.php'
 ```
 
-**NOTE:** don't use codestar if the page needs a **single-page**. Instead create a **custom post type** because **permalinks** to the single-page can only be assigned through custom post type. 
+**NOTE:** don't use codestar if the page needs a **single-page**. Instead create a **custom post type** because 
+
+**permalinks** to the single-page can only be assigned through custom post type. 
 
 # Creating pages
 
@@ -75,13 +85,17 @@ For in-built post types (blogs, news, faqs)
 **Exceptional case:** add CustomLinks (menu items) manually and create a menu with menuName and save.
 3. Click the **enable** checkbox on MaxMegaMenu Settings and save.
 4. Remove all the `<li>` menu items with nav from header.php.
-5. Go to **Mega Menu > Menu Locations** and copy PHP function and paste it within the `<ul>` tag of *header.php*.
+5. Go to **Mega Menu > Menu Locations** and copy PHP function and paste it within the `<ul>` tag of 
+
+*header.php*.
 6. Go to **Mega Menu > Menu Themes** and start styling. 
 
 ## Contact Form 7 plugin
 * To manage contact forms excluding register forms, sign up forms.  
 1. Copy the content within `<form> </form>` tags and paste it in the box.
-2. Replace the input types with the ones in the plugins with correct *labels, classess, placeholders, required or not*.
+2. Replace the input types with the ones in the plugins with correct *labels, classess, placeholders, required 
+
+or not*.
 
 ## ACF gallery plugin
 * For adding images sliders
