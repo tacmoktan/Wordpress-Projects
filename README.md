@@ -27,9 +27,7 @@ Some wordpress projects I worked on.
 7. Add `<?php get_header(); ?>`, `<?php get_footer();?>` to include header & footer in *front-page.php*
 8. Go to *function.php* & add necessary `wp_enqueue` for *style*(only .css files) and *script*(only .js files).
 9. Add `<?php wp_head();?>` immediately before `</head>` in *header.php* & `<?php wp_footer();?>` before `</body>` in *footer.php*. This will hook the stylesheets and scripts to the wordpress. & the webpage will be in its required style.
-10. Maintain dependencies (jquery is always on the top in `wp_enqueue_scripts()`). Open the **.html** file in text editor, order the links of styles and scripts in function of **.php** 
-
-file similar to what is shown in **.html** file.
+10. Maintain dependencies (jquery is always on the top in `wp_enqueue_scripts()`). Open the **.html** file in text editor, order the links of styles and scripts in function of **.php** file similar to what is shown in **.html** file.
 
 # Creating pages
 
