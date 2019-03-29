@@ -20,7 +20,7 @@ Some wordpress projects I worked on.
 ## Setting up styles(css) and scripts(js)
 1. Add theme through admin panel  
 2. Checkout `xampp/htdocs/projectName/wp-content/themes` in local disk.
-3. Update theme in wp-content with the frontend project files(css, js, others..)
+3. Update theme in **wp-content** with the frontend project files(css, js, others..)
 4. Follow template hierarchy
 5. Maintain *header.php*, *footer.php* (leave *index.php* as it is)
 6. Create and maintain *front-page.php*
@@ -38,7 +38,7 @@ Some wordpress projects I worked on.
 require get_template_directory().'/plugin/codestar-framework/codestar-framework1.0.2/cs-framework.php'
 ```
 
-**NOTE:** don't use codestar if the page needs a single-page, instead create a custom post type because permalinks to the single page can only be assigned through custom post type. 
+**NOTE:** don't use codestar if the page needs a **single-page**. Instead create a **custom post type** because **permalinks** to the single-page can only be assigned through custom post type. 
 
 # Creating pages
 
@@ -89,4 +89,6 @@ For in-built post types (blogs, news, faqs)
 ## SSBA ( simple share buttons )
 * For adding shareable links
 
-
+#Comments
+* Add comments in the Post(default not custom) section using `<?php wp_comment();?>`.
+* Also add necessary styles to it.
