@@ -3,8 +3,8 @@ Some wordpress projects I worked on.
 
 # REFERENCES 
 
-1. codex.wordpress (for syntax)
-2. underscores.me (for themes)
+1. [codex.wordpress] (https://codex.wordpress.org) (for syntax)
+2. [underscores.me] (http://underscores.me) (for themes)
 3. template hierarchy (for maintaining template) 
 
 # STEPS
